@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>blog</title>
+  </head>
+  <link rel="stylesheet" href="./assets/css/myblog.css" />
+  <link rel="stylesheet" href="./assets/css/reset.css" />
+
+  <body>
+    <header id="blogName">my blog</header>
+    <div class="wrapper">
+      <div class="aside">
+        <div class="addButton">
+          <span class="addCategory">카테고리 추가</span>
+          <span class="addContent">글쓰기</span>
+        </div>
+        <aside><div class="title">Category</div></aside>
+        <ul class="categoryList">
+          <li class="category">기본 카테고리</li>
+        </ul>
+      </div>
+      <div class="content">
+        <div class="post">
+          <h5 class="categoryName">카테고리 : 기본 카테고리</h5>
+          <h1 class="postHeader">my first posting</h1>
+          <div class="postContent">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
+            cumque voluptas quas ea, mollitia a nam id laboriosam placeat
+          </div>
+          <div class="comment">
+            <h1>comment</h1>
+            <div class="commentList">
+              <ul>
+                <li>아직 댓글이 없습니다.</li>
+              </ul>
+            </div>
+            <form class="commentBox">
+              <input
+                type="text"
+                id="comment"
+                placeholder="댓글을 입력하세요."
+              />
+              <button class="addComment">작성하기</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>footer</footer>
+    <div class="moveItem">
+      <a href="#blogName" class="moveToTop">^ <br />^ <br />top</a>
+    </div>
+  </body>
+  <script src="./assets/Js/myblog.js"></script>
+</html>

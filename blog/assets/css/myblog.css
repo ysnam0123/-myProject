@@ -1,0 +1,248 @@
+@font-face {
+  font-family: nareum;
+  src: url(../fonts/nareumgothic.woff) format('woff');
+  src: url(../fonts/nareumgothic.woff2) format('woff2');
+  font-weight: normal;
+}
+* {
+  font-family: nareum, sans-serif;
+}
+html,
+body {
+  scroll-behavior: smooth; /* 매끄러운 스크롤 */
+  width: 100%;
+  height: 100%;
+  background-color: #ededed;
+  overflow: scroll; /* 스크롤 활성화 */
+}
+
+header {
+  height: 70px;
+  padding: 15px 50px 0px 0px;
+  font-size: 40px;
+  color: rgb(111, 111, 111);
+  font-weight: 600;
+  text-align: end;
+  border-bottom: 2px black solid;
+}
+
+.wrapper {
+  width: 100%;
+  height: 1000px;
+  display: flex;
+  border-bottom: 2px solid black;
+}
+
+.addButton {
+  padding: 10px;
+  display: flex;
+  justify-content: end;
+  flex-direction: row;
+  gap: 10px;
+  top: 0; /* 스크롤 시 상단에서 고정 위치 */
+  position: sticky;
+  background-color: #ededed;
+}
+.addButton {
+  cursor: pointer;
+  text-decoration: underline;
+  color: rgb(116, 116, 116);
+  font-weight: 600;
+  font-size: 15px;
+}
+.aside {
+  flex: 1;
+  border-right: 2px black dotted;
+  height: 100%;
+  min-width: 180px;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  margin: 0;
+  margin-right: -2px;
+  border: 2px solid black;
+  border-left: 0;
+}
+
+.categoryList {
+  margin-top: 5px;
+  text-align: center;
+}
+.category {
+  padding: 10px 0px;
+  border: 1px solid black;
+  margin-right: -2px;
+  box-shadow: 0px 1px 1px 1px black;
+  cursor: pointer;
+  user-select: none; /* 드래그 금지 */
+}
+.category:hover {
+  transition: ease 0.1s;
+  transform: scale(1.01);
+}
+.category:active {
+  transform: rotateY(10deg);
+}
+/* 오른쪽 전체 구역 */
+.content {
+  display: flex;
+  flex-direction: column;
+  flex: 5;
+  width: 100%;
+  max-width: 997px;
+  box-sizing: border-box;
+  padding: 30px 50px;
+  border-right: 3px solid black;
+  overflow: auto;
+}
+
+/* 글 하나 */
+.post {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 40px 60px;
+}
+.categoryName {
+  text-align: end;
+  font-size: 13px;
+  color: #b6b6b6;
+  font-weight: 700;
+}
+.postHeader {
+  font-weight: 900;
+  font-size: 35px;
+  margin-bottom: 40px;
+}
+/* 글 하나의 본문 */
+.postContent {
+  text-wrap: pretty;
+}
+/* 댓글 전체 구역 */
+.comment {
+  background-color: #dad9d9;
+  margin-top: 50px;
+  padding: 30px;
+  border: 1px solid black;
+  border-radius: 10px;
+  flex: 1;
+  font-size: 14px;
+}
+.comment h1 {
+  margin-top: 10px;
+  display: inline-block;
+  padding: 5px 7px;
+  font-weight: 700;
+  font-size: 15px;
+  background-color: #ededed;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+/* 댓글이 저장되는 박스 */
+.commentList {
+  align-items: center;
+  padding: 20px 35px;
+  margin-top: 20px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  height: 20px;
+  background-color: #ededed;
+}
+.commentBox {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.comment form {
+  padding: 15px 10px;
+}
+#comment {
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 70%;
+  height: 60px;
+  padding-left: 10px;
+}
+.addComment {
+  width: 80px;
+  height: 67px;
+}
+
+footer {
+  height: 200px;
+  margin: 10px 30px;
+}
+
+.moveItem {
+  text-align: center;
+}
+.moveToTop {
+  display: inline-block; /* inline-block 사용 */
+  margin-bottom: 40px;
+  text-decoration: none;
+  color: black;
+  padding: 10px 20px; /* 스타일을 추가 */
+  border: 1px solid black;
+  border-radius: 15px;
+  text-align: center;
+  background-color: #f0f0f0;
+  transition: 0.5s ease;
+}
+
+.moveToTop:hover {
+  background-color: #b6b6b6;
+}
+
+/* 블로그 글 추가 */
+.newPost {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 40px 60px;
+  overflow: visible;
+  margin: 30px 0px;
+}
+
+.newPostHeader {
+  padding: 10px 15px;
+  margin-bottom: 10px;
+
+  width: 80%;
+  font-size: 20px;
+}
+.newPostDate {
+  display: flex;
+  margin-left: auto;
+  margin-right: 30px;
+  margin-bottom: 50px;
+}
+.newPostContent {
+  padding: 20px 30px;
+  width: 90%;
+  resize: unset;
+  overflow: visible;
+  height: 500px;
+  font-size: 15px;
+}
+
+.uploadPost {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  width: 80px;
+  height: 40px;
+  cursor: pointer;
+  user-select: none; /* 드래그 금지 */
+  border-radius: 10px;
+}
+
+.uploadPost:hover {
+  transition: ease 0.1s;
+  transform: scale(1.1);
+}
+.uploadPost:active {
+  transform: rotateY(10deg);
+}
