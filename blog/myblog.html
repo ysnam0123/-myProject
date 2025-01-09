@@ -13,10 +13,18 @@
     <div class="wrapper">
       <div class="aside">
         <div class="addButton">
-          <span class="addCategory">카테고리 추가</span>
           <span class="addContent">글쓰기</span>
         </div>
-        <aside><div class="title">Category</div></aside>
+        <aside>
+          <div class="title">
+            Category
+            <img
+              class="addCategory"
+              src="./assets/image/plus.png"
+              alt="addCategory"
+            />
+          </div>
+        </aside>
         <ul class="categoryList">
           <li class="category">기본 카테고리</li>
         </ul>
@@ -25,6 +33,7 @@
         <div class="post">
           <h5 class="categoryName">카테고리 : 기본 카테고리</h5>
           <h1 class="postHeader">my first posting</h1>
+          <h5 class="postDate">2025-01-19</h5>
           <div class="postContent">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
             cumque voluptas quas ea, mollitia a nam id laboriosam placeat
@@ -39,7 +48,14 @@
             <form class="commentBox">
               <input
                 type="text"
+                id="username"
+                placeholder="닉네임"
+                class="commentBoxForm"
+              />
+              <input
+                type="text"
                 id="comment"
+                class="commentBoxForm"
                 placeholder="댓글을 입력하세요."
               />
               <button class="addComment">작성하기</button>
