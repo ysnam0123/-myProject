@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="section1" class="active">
+      <!-- 첫 번째 화면 내용 -->
+      <button onclick="switchToSection2()">Go to Section 2</button>
+    </div>
+
+    <div id="section2" class="inactive">
+      <!-- 두 번째 화면 내용 -->
+      <button onclick="switchToSection1()">Go to Section 1</button>
+    </div>
+
+    <style>
+      .inactive {
+        display: none;
+      }
+
+      .active {
+        display: block;
+      }
+    </style>
+
+    <script>
+      function switchToSection2() {
+        document.getElementById('section1').classList.remove('active');
+        document.getElementById('section1').classList.add('inactive');
+        document.getElementById('section2').classList.remove('inactive');
+        document.getElementById('section2').classList.add('active');
+      }
+
+      function switchToSection1() {
+        document.getElementById('section2').classList.remove('active');
+        document.getElementById('section2').classList.add('inactive');
+        document.getElementById('section1').classList.remove('inactive');
+        document.getElementById('section1').classList.add('active');
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,178 @@
+/*
+밝은 초록 
+rgb(47,110,77);
+진한 초록 
+rgb(36,56,50);
+흰색
+rgb(255,255,255);
+*/
+@font-face {
+  font-family: starbucks;
+  src: url(../fonts/logo/Lexend.woff) format('.woff');
+  src: url(../fonts/logo/Lexend.woff2) format('.woff2');
+  font-size: normal;
+}
+@font-face {
+  font-family: message;
+  src: url(../fonts/message/GowunDodum.woff) format('.woff');
+  src: url(../fonts/message/GowunDodum.woff2) format('.woff2');
+  font-size: normal;
+}
+
+/* 화면 전환 */
+.active {
+  display: block;
+}
+.inactive {
+  display: none;
+}
+body {
+  max-width: 1600px;
+  overflow-x: hidden; /* 가로 스크롤 금지*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  width: 100%;
+  background-color: rgb(36, 56, 50);
+  color: rgb(255, 255, 255);
+  height: 80px;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  padding: 5px 15px;
+  font-family: starbucks, sans-serif;
+}
+header h1 {
+  font-size: 38px;
+  font-weight: 800;
+  margin-left: 10px;
+  margin-top: 10px;
+  user-select: none;
+}
+.logo {
+  margin-left: 20px;
+}
+.wrapper {
+  box-sizing: content-box;
+  width: 70%;
+  height: 100%;
+  display: flex;
+  margin-top: 10px;
+  justify-content: center;
+  border: 3px solid black;
+  border-radius: 30px;
+  padding: 50px 150px 140px 100px;
+  background-color: rgb(36, 56, 50);
+  color: rgb(255, 255, 255);
+  position: relative;
+}
+.message {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  text-wrap: pretty;
+  font-family: message, sans-serif;
+  margin-bottom: 60px;
+  color: rgb(255, 255, 255);
+}
+.logo {
+  width: 55px;
+  height: 55px;
+}
+
+#twoButtons {
+  padding: 60px 50px;
+  border-radius: 30px;
+  border: none;
+  margin-left: 50px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  background-color: rgb(47, 110, 77);
+  box-shadow: 0px 0px 3px 1px rgb(255, 255, 255);
+}
+.imoticon {
+  margin-top: 10px;
+  font-size: 50px;
+}
+button:active {
+  background-color: rgba(47, 110, 77, 0.5);
+}
+/* 두번째 페이지 */
+
+.button-container {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between; /* 버튼 사이에 간격을 둡니다 */
+  margin-bottom: 20px;
+}
+.fourButtons {
+  width: 180px;
+  height: 180px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  font-size: 30px;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  background-color: rgb(47, 110, 77);
+  box-shadow: 0px 0px 3px 1px rgb(255, 255, 255);
+}
+#backPage {
+  position: absolute;
+  left: 5%;
+  top: 5%;
+  background-color: rgb(47, 110, 77);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: none;
+  font-weight: 700;
+  box-shadow: 0px 0px 5px rgb(255, 255, 255);
+  font-size: 17px;
+}
+
+/* 세번째 페이지 */
+.thirdPage {
+  position: relative;
+}
+.sixButtons {
+  width: 180px;
+  height: 120px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  font-size: 30px;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  background-color: rgb(47, 110, 77);
+  box-shadow: 0px 0px 3px 1px rgb(255, 255, 255);
+}
+#selectedFlavor {
+  width: 200px;
+  position: absolute;
+  left: 115.5%;
+  top: -5%;
+  background-color: rgb(36, 56, 50);
+}
+
+#selectedFlavor li {
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding: 15px 5px;
+  text-align: center;
+  font-size: 30px;
+  user-select: none;
+  transition: 0.5s ease;
+}
+
+.selected {
+  background-color: rgb(47, 110, 77);
+}
