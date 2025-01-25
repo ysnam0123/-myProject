@@ -3,7 +3,9 @@ const ice = document.querySelector('.ice');
 const backPage = document.getElementById('backPage');
 const firstPage = document.getElementById('firstPage');
 const secondPage = document.getElementById('secondPage');
+const thirdPage = document.getElementById('thirdPage');
 let customerSelect = [];
+const coffee = document.getElementById('coffee');
 
 hot.addEventListener('click', () => {
   if ((customerSelect = [])) {
@@ -46,4 +48,10 @@ ice.addEventListener('click', () => {
 backPage.addEventListener('click', () => {
   secondPage.classList.replace('active', 'inactive');
   firstPage.classList.replace('inactive', 'active');
+});
+
+coffee.addEventListener('click', () => {
+  secondPage.classList.replace('active', 'inactive');
+  thirdPage.classList.remove('inactive');
+  thirdPage.classList.add('active');
 });
