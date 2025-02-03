@@ -1,0 +1,182 @@
+/* 
+검정
+222831
+
+회색
+393E46
+
+민트
+00ADB5
+
+화이트
+EEEEEE
+*/
+
+body {
+  background-color: #222831;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+}
+header {
+  font-size: 40px;
+  font-weight: 900;
+  color: #9acbd0;
+}
+.disable {
+  display: none;
+}
+.setTime {
+  display: flex;
+  background-color: #393e46;
+  align-items: center;
+  border: 1px solid black;
+  padding: 30px;
+  width: 500px;
+  height: 110px;
+}
+#second {
+  margin-left: 10px;
+}
+.time {
+  display: flex;
+  font-size: 50px;
+  font-weight: 800;
+  color: #98d8ef;
+  padding: 10px;
+  justify-content: center;
+}
+.changeTime {
+  cursor: pointer;
+  width: 80px;
+  height: 25px;
+  border-radius: 50px;
+  background-color: #e3fdfd;
+}
+.timerButtons {
+  display: flex;
+}
+.box {
+  display: flex;
+  flex-direction: row;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.ControlTimer {
+  cursor: pointer;
+  display: flex;
+  margin-left: 30px;
+  width: 100px;
+  height: 45px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  border: 1.5px solid;
+  background-color: #98d8ef;
+}
+.ControlTimer:last-child {
+  margin-left: 10px;
+  width: 80px;
+}
+#todolist {
+  margin-top: 20px;
+  width: 500px;
+  border: 2px solid #393e46;
+  padding: 0px 30px;
+  height: 530px;
+}
+h1 {
+  color: #98d8ef;
+}
+.taskBox {
+  border: 2px solid #98d8ef;
+  border-radius: 15px;
+  padding: 10px;
+  background-color: #393e46;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+.taskBox label {
+  font-size: 25px;
+  text-align: center;
+  margin-right: 15px;
+}
+#newTask {
+  height: 30px;
+  font-size: 15px;
+  width: 90%;
+  background-color: #393e46;
+  color: #eeeeee;
+  padding: 5px;
+  border: none;
+}
+#newTask::placeholder {
+  color: #eeeeee;
+}
+#newTask:focus {
+  border: 2px solid #98d8ef;
+}
+#add {
+  cursor: pointer;
+  height: 35px;
+  width: 80px;
+  border-radius: 10px;
+  margin-left: 10px;
+  background-color: #98d8ef;
+}
+.buttons:hover {
+  transition: 0.1s ease;
+  scale: 1.1;
+}
+.buttons:active {
+  transform: translateY(3px);
+}
+
+.tasklist {
+  overflow: scroll;
+  border: 2px solid #98d8ef;
+  height: 350px;
+  border-radius: 10px;
+  background-color: #393e46;
+  padding-left: 30px;
+}
+.tasks {
+  margin-top: 15px;
+  height: 25px;
+  padding: 10px;
+  width: 400px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  color: #eeeeee;
+  border: 2px solid #222831;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+.taskController {
+  display: flex;
+  gap: 10px;
+  margin-left: auto;
+}
+.controlTask {
+  cursor: pointer;
+  flex-direction: column;
+  color: #222831;
+  font-weight: 800;
+  height: 30px;
+  width: 50px;
+  border-radius: 8px;
+}
+.taskFinished {
+  background-color: #98d8ef;
+}
+.deleteTask {
+  background-color: #ff9494;
+}

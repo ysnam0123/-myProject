@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timer</title>
+  </head>
+  <link rel="stylesheet" href="./assets/css/timer.css" />
+  <body>
+    <div class="wrapper">
+      <header>Pomodoro Timer</header>
+      <div>
+        <div class="setTime">
+          <div class="box">
+            <div class="container">
+              <button class="changeTime" id="increaseHour">^</button>
+              <span class="time" id="hour">00</span>
+              <button class="changeTime" id="decreaseHour">v</button>
+            </div>
+            <div class="container time">:</div>
+            <div class="container">
+              <button class="changeTime" id="increaseMinute">^</button>
+              <span class="time" id="minute">00</span>
+              <button class="changeTime" id="decreaseMinute">v</button>
+            </div>
+            <div class="container" id="second">
+              <span class="time">00</span>
+            </div>
+          </div>
+          <div class="timerButtons">
+            <button id="startButton" class="ControlTimer buttons">
+              start!
+            </button>
+            <button id="resetButton" class="ControlTimer buttons">reset</button>
+          </div>
+        </div>
+      </div>
+      <div id="todolist">
+        <h1>To-Do List</h1>
+
+        <div class="taskBox">
+          <label for="newTask">📝</label>
+          <input type="text" id="newTask" placeholder="할 일을 추가하세요" />
+          <button id="add" class="buttons">추가</button>
+        </div>
+        <div>
+          <ol class="tasklist"></ol>
+        </div>
+      </div>
+    </div>
+    <aside>오늘 한 일</aside>
+
+    <script src="./assets/js/timer.js"></script>
+  </body>
+</html>
