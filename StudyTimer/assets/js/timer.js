@@ -145,7 +145,9 @@ function addTask() {
   if (taskValue) {
     const createTask = document.createElement('li');
     createTask.classList.add('tasks');
-    createTask.textContent = taskValue;
+    const taskText = document.createElement('span');
+    taskText.textContent = taskValue;
+
     const taskController = document.createElement('div');
     taskController.classList.add('taskController');
 
@@ -154,6 +156,11 @@ function addTask() {
     finishButton.classList.add('controlTask');
     finishButton.classList.add('buttons');
     finishButton.textContent = '완료';
+
+    finishButton.addEventListener('click', () => {
+      taskText.classList.add('finished');
+    });
+
     const deleteButton = document.createElement('button');
     deleteButton.classList.add('deleteTask');
     deleteButton.classList.add('controlTask');
@@ -163,6 +170,7 @@ function addTask() {
     newTask.value = '';
     taskController.appendChild(finishButton);
     taskController.appendChild(deleteButton);
+    createTask.appendChild(taskText);
     createTask.appendChild(taskController);
     tasklist.appendChild(createTask);
   } else {
@@ -171,8 +179,3 @@ function addTask() {
 }
 
 addButton.addEventListener('click', addTask);
-
-// const taskFinished = document.querySelector('.taskFinished');
-// taskFinished.addEventListener('click',()=>{
-
-// })

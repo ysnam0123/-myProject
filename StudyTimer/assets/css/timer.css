@@ -14,11 +14,13 @@ EEEEEE
 
 body {
   background-color: #222831;
+  padding: 20px 30px;
   width: 100%;
   height: 100%;
-  display: grid;
-  grid-template-columns: 1.5fr 1fr;
+  display: flex;
+  overflow-x: hidden;
 }
+
 header {
   font-size: 40px;
   font-weight: 900;
@@ -87,7 +89,7 @@ header {
   width: 500px;
   border: 2px solid #393e46;
   padding: 0px 30px;
-  height: 530px;
+  height: 600px;
 }
 h1 {
   color: #98d8ef;
@@ -130,6 +132,10 @@ h1 {
   margin-left: 10px;
   background-color: #98d8ef;
 }
+.buttons {
+  font-size: 15px;
+  font-weight: 600;
+}
 .buttons:hover {
   transition: 0.1s ease;
   scale: 1.1;
@@ -141,7 +147,7 @@ h1 {
 .tasklist {
   overflow: scroll;
   border: 2px solid #98d8ef;
-  height: 350px;
+  height: 400px;
   border-radius: 10px;
   background-color: #393e46;
   padding-left: 30px;
@@ -158,6 +164,9 @@ h1 {
   border: 2px solid #222831;
   border-radius: 10px;
   font-size: 20px;
+}
+.finished {
+  text-decoration: line-through;
 }
 
 .taskController {
@@ -179,4 +188,34 @@ h1 {
 }
 .deleteTask {
   background-color: #ff9494;
+}
+
+.taskManager {
+  width: 500px;
+  margin-left: 20px;
+}
+
+.finishedTask {
+  height: 760px;
+  border: 1px solid #393e46;
+}
+
+aside {
+  width: 380px;
+  margin-left: 10px;
+  height: 840px;
+  border: 2px solid #393e46;
+  padding: 10px 20px;
+}
+#profileImage {
+  width: 200px;
+  height: 200px;
+  border: 5px solid #98d8ef;
+  border-radius: 100%;
+  margin-left: 85px;
+  margin-bottom: 10px;
+}
+#userName {
+  display: flex;
+  justify-content: center;
 }
