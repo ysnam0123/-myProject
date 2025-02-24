@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <link rel="stylesheet" href="./assets/css/quiz.css" />
+  <body>
+    <div class="wrapper">
+      <h1>Quiz for FrontEnd Developers 🤔</h1>
+      <div class="user inactive">
+        <h3>user: <span class="userName"></span></h3>
+      </div>
+      <class class="questionBox" id="startPage">
+        <label for="name" class="nameLabel">what is your name? 📋</label>
+        <input type="text" id="nameInput" />
+        <div class="inputAlert inactive">이름을 입력하세요!!!</div>
+        <h2 class="ruReady">are you ready?</h2>
+        <button class="quizStart">Start Quiz✅</button>
+      </class>
+
+      <div class="questionBox question1 inactive">
+        <h2 class="question">
+          1. 문자열 Dinosaurus 에 slice(2,5)를 적용했을때 결과는?
+        </h2>
+        <div class="answerBox">
+          <button class="answer">Dino</button>
+          <button class="answer correct">nos</button>
+          <button class="answer">nosau</button>
+          <button class="answer">auru</button>
+        </div>
+      </div>
+
+      <div class="questionBox question2 inactive">
+        <h2 class="question">2. padStart(2,0) 에서 2, 0의 의미는?</h2>
+        ㄴ
+        <div class="answerBox">
+          <button class="answer">2번째 인덱스를 0으로 바꾼다</button>
+          <button class="answer correct">
+            2자리 수까지의 빈칸을 0으로 채운다
+          </button>
+          <button class="answer">0번째 인덱스를 2로 바꾼다.</button>
+          <button class="answer">두번째 인덱스부터 0으로 바꾼다.</button>
+        </div>
+      </div>
+      <div class="questionBox question3 inactive">
+        <h2 class="question">3. padStart(2,0) 에서 2, 0의 의미는?</h2>
+        <div class="answerBox">
+          <button class="answer">2번째 인덱스를 0으로 바꾼다</button>
+          <button class="answer correct">
+            2자리 수까지의 빈칸을 0으로 채운다
+          </button>
+          <button class="answer">0번째 인덱스를 2로 바꾼다.</button>
+          <button class="answer">두번째 인덱스부터 0으로 바꾼다.</button>
+        </div>
+      </div>
+      <div class="questionBox question4 inactive">
+        <h2 class="question">2. padStart(2,0) 에서 2, 0의 의미는?</h2>
+        <div class="answerBox">
+          <button class="answer">2번째 인덱스를 0으로 바꾼다</button>
+          <button class="answer correct">
+            2자리 수까지의 빈칸을 0으로 채운다
+          </button>
+          <button class="answer">0번째 인덱스를 2로 바꾼다.</button>
+          <button class="answer">두번째 인덱스부터 0으로 바꾼다.</button>
+        </div>
+      </div>
+      <div class="questionBox question5 inactive">
+        <h2 class="question">2. padStart(2,0) 에서 2, 0의 의미는?</h2>
+        <div class="answerBox">
+          <button class="answer">2번째 인덱스를 0으로 바꾼다</button>
+          <button class="answer correct">
+            2자리 수까지의 빈칸을 0으로 채운다
+          </button>
+          <button class="answer">0번째 인덱스를 2로 바꾼다.</button>
+          <button class="answer">두번째 인덱스부터 0으로 바꾼다.</button>
+        </div>
+      </div>
+      <div class="questionBox question6 inactive">
+        <h2 class="question">2. padStart(2,0) 에서 2, 0의 의미는?</h2>
+        <div class="answerBox">
+          <button class="answer">2번째 인덱스를 0으로 바꾼다</button>
+          <button class="answer correct">
+            2자리 수까지의 빈칸을 0으로 채운다
+          </button>
+          <button class="answer">0번째 인덱스를 2로 바꾼다.</button>
+          <button class="answer">두번째 인덱스부터 0으로 바꾼다.</button>
+        </div>
+      </div>
+      <div class="questionBox question7 inactive">
+        <h2 class="question">2. padStart(2,0) 에서 2, 0의 의미는?</h2>
+        <div class="answerBox">
+          <button class="answer">2번째 인덱스를 0으로 바꾼다</button>
+          <button class="answer correct lastAnswer">
+            2자리 수까지의 빈칸을 0으로 채운다
+          </button>
+          <button class="answer">0번째 인덱스를 2로 바꾼다.</button>
+          <button class="answer">두번째 인덱스부터 0으로 바꾼다.</button>
+        </div>
+      </div>
+      <div class="questionBox resultPage inactive">
+        <h1>Congratualtion!</h1>
+        <h1>Your score is ...</h1>
+        <div class="userScore"></div>
+      </div>
+    </div>
+  </body>
+  <script src="./assets/js/quiz.js"></script>
+</html>
